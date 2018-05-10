@@ -1,0 +1,23 @@
+body, html{
+	font-family: sans-serif;
+}
+
+h1 {
+	color: red;
+	margin-bottom: 20px;
+	font-size: 3rem;
+}
+
+h2{
+	font-size: 4rem;
+}
+
+a{
+	margin: 10px;
+}
+
+.container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}

@@ -1,24 +1,105 @@
-body, html {
-  font-family: sans-serif; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-size: 100%;
+  font: inherit;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  vertical-align: baseline; }
 
-h1 {
-  color: red;
-  margin-bottom: 20px;
-  font-size: 3rem; }
+body {
+  line-height: 1; }
 
-h2 {
-  font-size: 4rem; }
+ol, ul {
+  list-style: none; }
 
-a {
-  margin: 10px; }
+blockquote, q {
+  quotes: none; }
 
-.container {
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+.clear {
+  clear: both; }
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important; }
+
+section.hero-section {
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative; }
+  section.hero-section .inner {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px; }
+  section.hero-section .tint {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2); }
+  section.hero-section a {
+    border: 1px solid white;
+    padding: 7.5px 15px;
+    font-family: 'Nunito';
+    text-transform: uppercase;
+    color: white;
+    -webkit-transition: 0.25s background ease-out, 0.25s color ease-out;
+    -o-transition: 0.25s background ease-out, 0.25s color ease-out;
+    transition: 0.25s background ease-out, 0.25s color ease-out;
+    text-decoration: none;
+    margin-top: 50px; }
+    section.hero-section a:hover {
+      background: white;
+      color: black; }
+  section.hero-section h1 {
+    margin: 50px 0; }
+
+h1 {
+  font-family: 'Noto Serif';
+  color: white;
+  font-size: 4em; }
+
+h5 {
+  font-family: 'Nunito';
+  color: white;
+  font-size: 2em; }
+
+.home-content {
+  padding: 200px 0; }
+  .home-content .container {
+    width: 80%;
+    display: block;
+    margin: 0 auto; }
+    .home-content .container::after {
+      content: "";
+      display: table;
+      clear: both; }
+    .home-content .container .col-half {
+      width: 50%;
+      float: left; }
